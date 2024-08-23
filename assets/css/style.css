@@ -121,6 +121,9 @@ body{
     align-items: center;
     gap: 20px;
 }
+.footer .footer-start .icons :hover{
+    cursor: pointer;
+}
 .footer .footer-start .icons .facebook{
     border: 1px solid #fff;
     padding: 3px;
