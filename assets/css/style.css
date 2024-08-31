@@ -162,14 +162,24 @@ body{
     }
 }
 @media screen and (max-width:420px) {
+    .intro .row{
+        align-items: center;
+    }
     .intro-data{
-        gap: 20px;
+        gap: 30px;
+        width: calc((100% - 50px));
     }
     .intro-data h1{
         font-size: 20px;
     }
     .intro p{
         font-size: 13px;
+    }
+    .intro-data .auth{
+        gap: 10px;
+    }
+    .intro .intro-img {
+        width: 100%;
     }
 }
 /*end intro section */
@@ -250,6 +260,25 @@ body{
         gap: 30px;
     }
 }
+@media screen and (max-width:420px){
+
+    .learn .about-learn{
+        width: calc(100% - 50px);
+        gap: 30px;
+    }
+    .learn .about-learn h2{
+        font-size: 20px;
+    }
+    .learn .about-learn p{
+        font-size: 13px;
+    }
+    .learn .about-learn span{
+        font-size: 13px;
+    }
+    .learn .courses-learn img{
+        width: 20px;
+    }
+}
 /*end learn section*/
 
 /*start view section*/
@@ -317,6 +346,23 @@ body{
     .views .row1{
         justify-content: flex-start;
         gap: 40px;
+    }
+}
+@media screen and (max-width:420px){
+    .views .views-img{
+        width: 80%;
+    }
+    .views-information .row1{
+        align-self: center;
+    }
+    .views-information h2{
+        font-size: 20px;
+    }
+    .views-information p{
+        font-size: 13px;
+    }
+    .views-information span{
+        font-size: 13px;
     }
 }
 /*end view section*/
@@ -451,10 +497,19 @@ body{
     }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
 
     .courses-section .course-details{
-        padding-right: 30px;
+        width: calc(100% - 50px);
+    }
+    .courses-section .course-details div span{
+        font-size: 13px;
+    }
+    .courses-section .course-details div h2{
+        font-size: 20px;
+    }
+    .courses-section .course-details div p{
+        font-size: 12px;
     }
 }
 /*end courses section */
