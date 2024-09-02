@@ -146,21 +146,27 @@ body{
     }
 }
 @media screen and (max-width:890px) {
-    .intro-data{
-        gap: 20px;
+    .intro .row{
+        align-items: center;
     }
-    .intro-data h1{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width:620px) {
     .intro-data{
-        gap: 20px;
+        gap: 30px;
+        width: calc((100% - 50px));
     }
     .intro-data h1{
         font-size: 30px;
     }
+    .intro p{
+        font-size: 18px;
+    }
+    .intro-data .auth{
+        gap: 20px;
+    }
+    .intro .intro-img {
+        width: 80%;
+    }
 }
+
 @media screen and (max-width:420px) {
     .intro .row{
         align-items: center;
@@ -227,7 +233,7 @@ body{
     background-color: #eee;
     padding: 10px;
 }
-@media screen and (max-width:1090px){
+@media screen and (max-width:1120px){
 
     .learn .row{
         flex-direction: column;
@@ -238,26 +244,40 @@ body{
         width:calc(100% / 2);
 
     }
-}
-@media screen and (max-width:700px){
-
-    .learn .courses-learn{
-        width:calc(100% / 2);
-    }
-    .learn p{
-        font-size: 10px;
+    .learn .about-learn{
+        width: calc(100% - 50px);
+        gap: 30px;
     }
     .learn .about-learn h2{
-        font-size: 14px;
+        font-size: 26px;
+    }
+    .learn .about-learn p{
+        font-size: 18px;
     }
     .learn .about-learn span{
-        font-size: 10px;
+        font-size: 16px;
     }
-    .learn h3{
-        font-size: 12px;
+    .learn .courses-learn img{
+        width: 20px;
     }
-    .learn .row{
+}
+@media screen and (max-width:890px){
+
+    .learn .about-learn{
+        width: calc(100% - 50px);
         gap: 30px;
+    }
+    .learn .about-learn h2{
+        font-size: 24px;
+    }
+    .learn .about-learn p{
+        font-size: 18px;
+    }
+    .learn .about-learn span{
+        font-size: 16px;
+    }
+    .learn .courses-learn img{
+        width: 20px;
     }
 }
 @media screen and (max-width:420px){
@@ -378,7 +398,7 @@ body{
 .courses-section .courses{  
     display: flex;
     flex-wrap: wrap;
-    gap:40px;  
+    gap:40px; 
 }
 .courses-section .course-details{
     width: 40%;
@@ -489,11 +509,25 @@ body{
     }
     .courses-section .courses{
         order: 1;
-        flex-direction: column;
         align-items: center;
-        gap: 30px;
-        padding-top: 30px;
+        gap: 100px;
         
+        padding: 30px 100px;
+    }
+}
+@media screen and (max-width:890px){
+
+    .courses-section .course-details{
+        width: calc(100% - 50px);
+    }
+    .courses-section .course-details div span{
+        font-size: 13px;
+    }
+    .courses-section .course-details div h2{
+        font-size: 26px;
+    }
+    .courses-section .course-details div p{
+        font-size: 18px;
     }
 }
 
