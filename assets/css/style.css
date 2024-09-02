@@ -512,16 +512,19 @@ html,body{
     }
     .courses-section .courses{
         order: 1;
-        align-items: center;
-        gap: 100px;
-        
-        padding: 30px 100px;
+        padding: 30px 0;
+        width: calc(100% - 50px);
+    }
+    .courses-section .course-details{
+        width: calc(100% - 50px);
+        align-self: flex-start;
     }
 }
 @media screen and (max-width:890px){
 
     .courses-section .course-details{
         width: calc(100% - 50px);
+        align-self: flex-start;
     }
     .courses-section .course-details div span{
         font-size: 13px;
@@ -538,6 +541,7 @@ html,body{
 
     .courses-section .course-details{
         width: calc(100% - 50px);
+        align-self: flex-start;
     }
     .courses-section .course-details div span{
         font-size: 13px;
