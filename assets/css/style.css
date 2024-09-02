@@ -5,6 +5,9 @@ body{
     background-color: #eee;
     box-sizing: border-box;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 /*start navbar*/
 
@@ -544,7 +547,12 @@ body{
     }
     .courses-section .course-details div p{
         font-size: 12px;
+        
     }
+    .courses-section .course-details{
+        align-self: flex-start;
+    }
+
 }
 /*end courses section */
 
